@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hashtag Generator</title>
+</head>
+
+<body style="font-family: Arial; text-align:center; max-width:600px; margin:auto;">
+
+<h1>Hashtag Generator</h1>
+
+<input type="text" id="topic" placeholder="Argomento">
+
+<br><br>
+
+<button onclick="genera()">Genera hashtag</button>
+
+<h3 id="result"></h3>
+
+<script>
+function genera() {
+
+let topic = document.getElementById("topic").value;
+
+if (!topic) {
+document.getElementById("result").innerHTML = "Inserisci un argomento";
+return;
+}
+
+let hashtags = "#" + topic + " #viral #fyp #trending";
+
+document.getElementById("result").innerHTML = hashtags;
+}
+</script>
+
+</body>
+</html>
