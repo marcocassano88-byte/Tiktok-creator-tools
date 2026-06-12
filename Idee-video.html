@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<title>Idee Video TikTok</title>
+</head>
+
+<body style="font-family: Arial; max-width:600px; margin:auto; text-align:center;">
+
+<h1>Idee Video TikTok</h1>
+
+<input type="text" id="topic" placeholder="Argomento">
+
+<br><br>
+
+<button onclick="genera()">Genera idee</button>
+
+<h3 id="result"></h3>
+
+<script>
+function genera() {
+    let topic = document.getElementById("topic").value;
+
+    let idea1 = "5 curiosità su " + topic;
+    let idea2 = topic + " spiegato in 30 secondi";
+    let idea3 = "Perché tutti parlano di " + topic + "?";
+
+    document.getElementById("result").innerHTML =
+        idea1 + "<br>" + idea2 + "<br>" + idea3;
+}
+</script>
+
+</body>
+</html>
