@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TikTok Creator Tools</title>
+</head>
+
+<body>
+
+<h1>TikTok Creator Tools</h1>
+
+<h2>Calcolatore guadagni TikTok</h2>
+
+<input type="number" id="views" placeholder="Visualizzazioni">
+
+<button onclick="calcola()">Calcola</button>
+
+<p id="result"></p>
+
+<script>
+function calcola() {
+
+let views = document.getElementById("views").value;
+
+let min = views * 0.0002;
+let max = views * 0.0008;
+
+document.getElementById("result").innerHTML =
+"Guadagno stimato: €" +
+min.toFixed(2) +
+" - €" +
+max.toFixed(2);
+
+}
+</script>
+
+</body>
+</html>
